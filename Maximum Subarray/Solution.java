@@ -20,7 +20,8 @@ class Solution {
 
         /*
          * Algorithm: We start with the second element in the list and we find if the new sum is greater than the current value or not, 
-         * if not, we choose the current value which implies, we start a new subarray from this number forward. We then compare if the current          * sum is bigger than the current maximum or not, and update maximum accordingly.
+         * if not, we choose the current value which implies, we start a new subarray from this number forward. We then compare if the
+         * current sum is bigger than the current maximum or not, and update maximum accordingly.
          */
         for (int i = 1; i < nums.length; i++) {
             sum = Math.max(nums[i] + sum, nums[i]);
